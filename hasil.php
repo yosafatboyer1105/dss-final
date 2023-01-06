@@ -48,7 +48,7 @@ include('navbar.php');
 	<table class="ui celled table">
 		<thead>
 		<tr>
-			<th>Kriteria</th>
+			<th>Nama Kriteria</th>
 			<th>Priority Vector (rata-rata)</th>
 			<?php
 			for ($i=0; $i <= (getJumlahAlternatif()-1); $i++) { 
@@ -88,14 +88,14 @@ include('navbar.php');
 
 	</table>
 
-
+<br>
 	<h2 class="ui header">Hasil Perangkingan</h2>
 	<table class="ui celled blue table">
 		<thead>
 			<tr>
 				<th>Peringkat</th>
-				<th>Alternatif</th>
-				<th>Nilai</th>
+				<th>Nama Alternatif</th>
+				<th>Nilai Prioritas (Ranking)</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -127,6 +127,7 @@ include('navbar.php');
 			?>
 		</tbody>
 	</table>
+	<br>
 	<form action="index.php">
 	<button class="ui right labeled icon button" style="float: right;">
 		<i class="right arrow icon"></i>

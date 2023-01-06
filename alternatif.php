@@ -32,7 +32,7 @@
 
 <section class="content container mt-5">
 
-	<h2 class="ui header">Alternatif</h2>
+	<h2 class="ui header">Daftar Alternatif</h2> 
 
 	<table class="ui celled table">
 		<thead>
@@ -59,7 +59,7 @@
 					<form method="post" action="alternatif.php">
 						<input type="hidden" name="id" value="<?php echo $row['id'] ?>">
 						<button type="submit" name="edit" class="ui mini teal left labeled icon button"><i class="right edit icon"></i>EDIT</button>
-						<button type="submit" name="delete" class="ui mini red left labeled icon button"><i class="right remove icon"></i>DELETE</button>
+						<button type="submit" name="delete" class="ui mini red left labeled icon button"><i class="right remove icon"></i>HAPUS</button>
 					</form>
 				</td>
 			</tr>
@@ -72,7 +72,7 @@
 				<th colspan="3">
 					<a href="tambah.php?jenis=alternatif">
 						<div class="ui right floated small primary labeled icon button">
-						<i class="plus icon"></i>Tambah
+						<i class="plus icon"></i>Tambah Alternatif 
 						</div>
 					</a>
 				</th>

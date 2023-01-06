@@ -89,20 +89,22 @@
 			</tr>
 			<tr>
 				<th colspan="<?php echo ($n+2)?>">Consistency Ratio</th>
-				<th><?php echo (round(($consRatio * 100),2))?> %</th>
+				<th><?php echo (round(($consRatio * 10),2))?> %</th>
 			</tr>
 		</tfoot>
 	</table>
 
 <?php
-	if ($consRatio > 0.1) {
+// (10 & 0.01 * 100)
+// yang muncul di proses php (perbandingan kriteria) -> biarin aja
+	if ($consRatio > 0.01 * 100) {
 ?>
 		<div class="ui icon red message">
 			<i class="close icon"></i>
 			<i class="warning circle icon"></i>
 			<div class="content">
 				<div class="header">
-					Nilai Consistency Ratio melebihi 10% !!!
+					Nilai Consistency Ratio melebihi 10% !
 				</div>
 				<p>Mohon input kembali tabel perbandingan...</p>
 			</div>
